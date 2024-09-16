@@ -1,0 +1,16 @@
+# Node.js
+node_modules/
+
+# Logs
+*.log
+
+# Archivos de configuración
+.env
+
+# Carpeta de construcción
+/build
+
+# Visual Studio Code
+.vscode/
+
+# HTTP requests file

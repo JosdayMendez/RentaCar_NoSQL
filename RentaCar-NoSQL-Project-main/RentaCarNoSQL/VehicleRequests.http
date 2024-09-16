@@ -1,0 +1,41 @@
+###
+GET http://localhost:9000/api/vehicles http/1.1
+content-type: application/json
+
+
+###
+GET http://localhost:9000/api/vehicles/65642fb19d53691fbf778a0c http/1.1
+content-type: application/json
+
+
+###
+POST http://localhost:9000/api/vehicles http/1.1
+content-type: application/json
+
+{
+    "brand": "Mazda",
+    "model": "RX-7 (FC)",
+    "year": 1989,
+    "price": 18000,
+    "transmission": "Manual",
+    "status": 1
+}
+
+
+###
+PUT http://localhost:9000/api/vehicles/656430d6623a38a32168babb http/1.1
+content-type: application/json
+
+{
+    "brand": "Mazda",
+    "model": "RX-7 (FC)",
+    "year": 1989,
+    "price": 18000,
+    "transmission": "Manual",
+    "status": 1
+}
+
+###
+DELETE http://localhost:9000/api/vehicles/656430d6623a38a32168babb http/1.1
+content-type: application/json
+

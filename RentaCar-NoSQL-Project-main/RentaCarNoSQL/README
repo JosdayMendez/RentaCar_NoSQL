@@ -1,0 +1,63 @@
+# RentACarNoSQL
+
+This is the repository for the RentACarNoSQL project, a car rental application built with Node.js, Express, and MongoDB.
+
+## Installation
+
+1. Clone this repository: `git clone https://github.com/kevCRH/RentaCar-NoSQL-Project.git`
+2. Navigate to the project directory: `cd rentacarnosql`
+3. Install dependencies: `npm install`
+
+## Configuration
+
+Create a `.env` file at the root of the project and set up the necessary environment variables. You can use the `.env.example` file as a reference. **Make sure to set the `MONGODB_URL` variable to your MongoDB Atlas connection string.**
+
+Example `.env` file:
+
+MONGODB_URL=mongodb+srv://username:password@cluster.example.com/database_name?retryWrites=true&w=majority
+
+## Usage
+
+To start the application, run: `npm run start`
+
+The application will be available at [http://localhost:9000](http://localhost:9000).
+
+
+## Project Structure
+
+- `src/`: Contains the source code of the application.
+- `src/index.js`: Main file of the application.
+- `src/services/`: Contains the services used by the application.
+- `src/routes/`: Contains the application routes.
+- `src/models/`: Contains data models.
+- `src/controllers/`: Contains the controllers for each route.
+
+## Main Dependencies
+
+- [Express](https://expressjs.com/): Web framework for Node.js.
+- [Mongoose](https://mongoosejs.com/): MongoDB object modeling library.
+- [dotenv](https://www.npmjs.com/package/dotenv): Loads environment variables from a `.env` file. ()
+- [Nodemon](https://nodemon.io/): Automatically restarts the application upon detecting changes.
+
+## Contributions
+
+This project has been made possible thanks to the contributions of the following students from the Systems Engineering program at Fidelitas University in Heredia, Costa Rica:
+
+- **Derek Castillo**
+  - Email: dcastillo70923@ufide.ac.cr
+
+- **Kevin Céspedes Monge**
+  - Email: kcespedes00989@ufide.ac.cr
+
+- **Jorge Gómez Matamoros**
+  - Email: jgomez80496@ufide.ac.cr
+
+- **Josday Méndez Rodríguez**
+  - Email: jmendez20454@ufide.ac.cr
+
+- **Jose Núñez Corrales**
+  - Email: jnunez20598@ufide.ac.cr
+
+## License
+
+This project is licensed under the [ISC License](https://opensource.org/licenses/ISC).

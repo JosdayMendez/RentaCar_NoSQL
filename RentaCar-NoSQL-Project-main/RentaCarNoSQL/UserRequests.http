@@ -1,0 +1,53 @@
+// reques http to test the api endpoints with rest client extension
+
+###
+GET http://localhost:9000/api/users http/1.1
+content-type: application/json
+
+###
+GET http://localhost:9000/api/users/6556f00b158ad6038a8dd6f0 http/1.1
+content-type: application/json
+
+
+###
+POST http://localhost:9000/api/users http/1.1
+content-type: application/json
+
+{
+    "name": "Kevin Cespedes Monge",
+    "id": "402500989",
+    "email": "kevin@example.com",
+    "password": "clave123",
+    "phone": "88888888",
+    "address": "Heredia, Costa Rica",
+    "role": "admin",
+    "status": 1    
+}
+
+###
+PUT http://localhost:9000/api/users/6556f00b158ad6038a8dd6f0 http/1.1
+content-type: application/json
+
+{
+    "name": "Kevin Cespedes Monge",
+    "email": "Kevin@example.com",
+    "password": "contraseña123"
+}
+
+###
+DELETE http://localhost:9000/api/users/6556f00b158ad6038a8dd6f0 http/1.1
+content-type: application/json
+
+###
+
+
+###
+POST http://localhost:9000/api/login http/1.1
+content-type: application/json
+
+{
+  "email": "kevin@example.com",
+  "password": "clave123",
+  "status": true
+}
+

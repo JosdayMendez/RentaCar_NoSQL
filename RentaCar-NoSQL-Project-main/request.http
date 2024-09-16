@@ -1,0 +1,12 @@
+###
+
+POST http://localhost:9000/api/insurances HTTP/1.1
+Content-Type: application/json
+
+  {
+  "insureance_id": "identificadorUnicoSeguro123",
+  "type_of_insurance": "Seguro de Ejemplo",
+  "cost": "100",
+  "coverage": "Cobertura de Ejemplo",
+  "availability": true
+}

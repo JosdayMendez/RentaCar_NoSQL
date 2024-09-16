@@ -1,0 +1,141 @@
+// reques http to test the api endpoints with rest client extension
+
+###
+GET http://localhost:9000/api/users http/1.1
+content-type: application/json
+
+###
+POST http://localhost:9000/api/users http/1.1
+content-type: application/json
+
+{
+    "name": "Kevin Cespedes Monge",
+    "id": "402500989",
+    "email": "kevin@example.com",
+    "password": "clave123",
+    "phone": "88888888",
+    "address": "Heredia, Costa Rica",
+    "role": "admin",
+    "status": 1    
+}
+
+###
+POST http://localhost:9000/api/branchs http/1.1
+content-type: application/json
+
+{
+  "branch_name": "Sucursal Principal",
+  "id": "1",
+  "address": "123 Calle Principal",
+  "city": "San José",
+  "availability": true
+}
+
+###
+GET http://localhost:9000/api/branchs http/1.1
+  
+
+###
+POST http://localhost:9000/api/vehicategories http/1.1
+content-type: application/json
+
+{
+  "description": "Automóvil compacto",
+  "dailyRate": 50.99,
+  "categoryName": "Compacto"
+}
+
+###
+GET http://localhost:9000/api/categories http/1.1
+
+
+###
+POST http://localhost:9000/api/insurances http/1.1
+content-type: application/json
+
+{
+  "insureance_id": "A123",
+  "type_of_insurance": "Seguro completo",
+  "cost": 25.99,
+  "coverage": "Cobertura total",
+  "availability": true
+}
+
+###
+GET http://localhost:9000/api/insurances http/1.1
+
+
+###
+POST http://localhost:9000/api/packages http/1.1
+content-type: application/json
+
+{
+  "package_name": "Paquete Estándar",
+  "id": "P001",
+  "gps": true,
+  "another_driver": true,
+  "baby_chair": false,
+  "description": "Paquete con servicios estándar",
+  "availability": true,
+  "price": 10.99
+}
+
+###
+GET http://localhost:9000/api/packages http/1.1
+
+
+###
+POST http://localhost:9000/api/reservation http/1.1
+content-type: application/json
+
+{
+  "clients": {
+    "name": "Juan Pérez",
+    "id": "C001",
+    "email": "juan@example.com",
+    "phone": "123456789",
+    "address": "456 Calle Secundaria"
+  },
+  "reservedVehicle": "V001",
+  "startDate": "2023-01-01",
+  "endDate": "2023-01-10",
+  "status": true,
+  "pickUpLocation": "L001",
+  "dropOffLocation": "L002",
+  "price": 150.99
+}
+
+###
+GET http://localhost:9000/api/reservations http/1.1
+
+
+###
+POST http://localhost:9000/api/reviews http/1.1
+content-type: application/json
+
+{
+  "clientName": "María Rodríguez",
+  "clientEmail": "maria@example.com",
+  "reviewDescription": "¡Excelente servicio! Muy satisfecha con la experiencia."
+}
+
+###
+GET http://localhost:9000/api/reviews http/1.1
+
+
+
+###
+POST http://localhost:9000/api/vehicles http/1.1
+content-type: application/json
+
+{
+    "brand": "Mazda",
+    "model": "RX-7 (FC)",
+    "year": 1989,
+    "price": 18000,
+    "transmission": "Manual",
+    "status": 1
+}
+
+###
+GET http://localhost:9000/api/vehicles http/1.1
